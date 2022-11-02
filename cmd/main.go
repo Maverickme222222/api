@@ -57,7 +57,7 @@ func run(log *zerolog.Logger) error {
 		conf.Version
 		Web struct {
 			APIHost         string        `conf:"env:RELAY_APIHOST,default:localhost"`
-			Port            int           `conf:"env:RELAY_PORT,default:9090"`
+			Port            int           `conf:"env:RELAY_PORT,default:8080"`
 			ReadTimeout     time.Duration `conf:"env:RELAY_API_READ_TIMEOUT,default:5s"`
 			WriteTimeout    time.Duration `conf:"env:RELAY_API_WRITE_TIMEOUT,default:5s"`
 			ShutdownTimeout time.Duration `conf:"env:RELAY_API_SHUTDOWN_TIMEOUT,default:5s"`
