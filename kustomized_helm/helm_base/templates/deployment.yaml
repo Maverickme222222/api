@@ -30,6 +30,6 @@ spec:
             initialDelaySeconds: 3600
           env:
             - name: "USERS_SVC"
-              value: helm-users-app-dev:9090
+              value: users-svc:9090
             - name: "EMAILS_SVC"
-              value: helm-emails-app-dev:9090
+              value: emails-svc:9090
