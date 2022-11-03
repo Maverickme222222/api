@@ -18,7 +18,7 @@ func API(build string, services services.Services, log *zerolog.Logger) *mux.Rou
 
 	logicI := logic.New(services)
 
-	users := NewUserHandler(*logicI)
+	users := NewUserHandler(*logicI, log)
 	emails := NewEmailHandler(*logicI)
 
 	// subrouter for the /api/v1 endpoint
