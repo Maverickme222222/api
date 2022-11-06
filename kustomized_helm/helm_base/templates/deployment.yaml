@@ -30,6 +30,6 @@ spec:
             initialDelaySeconds: 3600
           env:
             - name: "USERS_SVC"
-              value: users-svc:9090
+              value: users:9090
             - name: "EMAILS_SVC"
-              value: emails-svc:9090
+              value: emails:9090
